@@ -1,0 +1,54 @@
+%------------------------------------------------
+%---------------TITLE FORMATTING-----------------
+%--------------------BEGIN-----------------------
+\usepackage{titlesec}
+%------------------------------------------------
+\titleformat
+{\section} % command
+[display] % shape
+{\scseries\Large\scshape} % format
+{\vspace*{\fill} \hfill Campaign \ \thesection \hfill} % label
+{0.1ex} % sep
+{
+    \centering
+    \vspace{-0.5ex}
+    \sectionlinetwowhole{Black}{88}
+} % before-code
+[
+\vspace{-0.5ex}% 
+\sectionlinetwowhole{Black}{88}
+] % after-code
+%------------------------------------------------
+\titleformat
+{\subsection} % command
+[display] % shape
+{\scseries\Large\scshape} % format
+{\vspace*{\fill} \hfill  \hfill} % label
+{0.1ex} % sep
+{
+    \centering
+    \vspace{-0.5ex}
+    \sectionlinetwoquarter{Black}{84}
+} % before-code
+[
+\vspace{-0.5ex}%
+\sectionlinetwoquarter{Black}{84}
+] % after-code
+%------------------------------------------------
+\titleformat
+{\subsubsection} % command
+[display] % shape
+{\scseries\Large\scshape} % format
+{\hfill \hfill} % label
+{0.5ex} % sep
+{
+    \centering
+    \hrule
+} % before-code
+[
+\vspace{0.5ex}%
+\hrule
+] % after-code
+%------------------------------------------------
+%--------------------ENDS------------------------
+%------------------------------------------------

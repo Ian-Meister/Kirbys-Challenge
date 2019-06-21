@@ -1,0 +1,68 @@
+
+%------------------------------------------------
+%---------------SECTIONING LINES-----------------
+%--------------------BEGINS----------------------
+\PassOptionsToPackage{svgnames}{xcolor}
+\usepackage[object=vectorian]{pgfornament} %%  http://altermundus.com/pages/tkz/ornament/index.html
+\usepackage{lipsum,tikz}
+%------------------------------------------------
+\newcommand{\sectionline}{%
+  \noindent
+  \begin{center}
+  {\color{DarkViolet}
+    \resizebox{0.75\linewidth}{1ex}
+    {{%
+    {\begin{tikzpicture}
+    \node  (C) at (0,0) {};
+    \node (D) at (9,0) {};
+    \path (C) to [ornament=85] (D);
+    \end{tikzpicture}}}}}%
+    \end{center}
+  }
+%------------------------------------------------
+%% A macro with two arguments to change ornaments and colors easily
+%% Syntax -- \sectionlinetwo{<color>}{<ornament>}
+\newcommand{\sectionlinetwoquarter}[2]{%
+  \nointerlineskip \vspace{.5\baselineskip}\hspace{\fill}
+  {\resizebox{0.25\linewidth}{1.2ex}
+    {\pgfornament[color = #1]{#2}
+    }}%
+    \hspace{\fill}
+    \par\nointerlineskip \vspace{.5\baselineskip}
+  }
+%------------------------------------------------
+%% A macro with two arguments to change ornaments and colors easily
+%% Syntax -- \sectionlinetwo{<color>}{<ornament>}
+\newcommand{\sectionlinetwohalf}[2]{%
+  \nointerlineskip \vspace{.5\baselineskip}\hspace{\fill}
+  {\resizebox{0.5\linewidth}{1.2ex}
+    {\pgfornament[color = #1]{#2}
+    }}%
+    \hspace{\fill}
+    \par\nointerlineskip \vspace{.5\baselineskip}
+  }
+%------------------------------------------------
+%% A macro with two arguments to change ornaments and colors easily
+%% Syntax -- \sectionlinetwo{<color>}{<ornament>}
+\newcommand{\sectionlinetwothreequarters}[2]{%
+  \nointerlineskip \vspace{.5\baselineskip}\hspace{\fill}
+  {\resizebox{0.75\linewidth}{1.2ex}
+    {\pgfornament[color = #1]{#2}
+    }}%
+    \hspace{\fill}
+    \par\nointerlineskip \vspace{.5\baselineskip}
+  }
+%------------------------------------------------
+%% A macro with two arguments to change ornaments and colors easily
+%% Syntax -- \sectionlinetwo{<color>}{<ornament>}
+\newcommand{\sectionlinetwowhole}[2]{%
+  \nointerlineskip \vspace{.5\baselineskip}\hspace{\fill}
+  {\resizebox{1.0\linewidth}{1.2ex}
+    {\pgfornament[color = #1]{#2}
+    }}%
+    \hspace{\fill}
+    \par\nointerlineskip \vspace{.5\baselineskip}
+  }
+%------------------------------------------------
+%--------------------ENDS------------------------
+%------------------------------------------------

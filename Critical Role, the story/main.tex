@@ -1,0 +1,67 @@
+%------------------------------------------------
+%------------------------------------------------
+%------------------------------------------------
+%Project & LaTeX files Author: Ian Christoph Meister
+%Project Start Date: 
+
+
+
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[subpreambles=false]{standalone}
+\usepackage{import}
+
+\usepackage{geometry}
+\geometry{a4paper, total={8.5in,11in}, portrait, margin=1in}
+
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{color}
+\usepackage{ragged2e}
+
+\renewcommand*\contentsname{The Tales of Their Travels}
+
+%------------------------------------------------
+%----------------TITLE SECTION-------------------
+%-------------------BEGINS-----------------------
+\title{\LARGE\textbf{CRITICAL ROLE} 
+\\ \textsc{The First and Second Campaigns}}
+\author{\textit{Ascribed as a Faithful Watch of A Group of Friends \& Their Shenanigans.}
+\\ \textit{Rolling fates in Exandria for a Second Time.}}
+\date{}
+%------------------------------------------------
+%--------------------ENDS------------------------
+%------------------------------------------------
+%<+><+><+><+><+><+><+><+><+><+><+><+><+><+><+><+>
+\input{Customizations/Nomenclatures.tex}
+%<+><+><+><+><+><+><+><+><+><+><+><+><+><+><+><+>
+\input{Customizations/Title_Formatting.tex}
+%<+><+><+><+><+><+><+><+><+><+><+><+><+><+><+><+>
+\input{Customizations/Section_Lines.tex}
+%<+><+><+><+><+><+><+><+><+><+><+><+><+><+><+><+>
+
+
+
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+\printnomenclature
+
+\newpage
+
+\tableofcontents
+\newpage
+\end{center}
+\newpage
+
+\input{Texts/C1.tex} %The Story of Vox Machina
+
+\newpage
+
+\input{Texts/C2.tex} %The Story of The Mighty Nein
+
+\end{document}
